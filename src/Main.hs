@@ -1,10 +1,10 @@
 import Test.QuickCheck
 
-absAverage :: [Double] -> Double
-absAverage ds = sum ds / fromIntegral (length ds)
+absAverage1 :: [Double] -> Double
+absAverage1 ds = sum ds / fromIntegral (length ds)
 
---quickCheck1 :: IO ()
-quickCheck1 = \x -> absAverage x >= 0
+quickCheck1 :: [Double] -> Bool
+quickCheck1 = \x -> absAverage1 x >= 0
 
 main :: IO ()
 main = do
