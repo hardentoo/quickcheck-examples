@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-function Indent() {
-  sed -e 's/^/  /'
-}
+set -eu
 
-echo "Good examples"
-dist/build/huttons-razor/huttons-razor '1 + 2' '3 + 4' '99999999999999999+1' | Indent
-
-echo
-echo "Bad examples"
-dist/build/huttons-razor/huttons-razor '' '+' '1+' '1 - 2' | Indent
+exec cabal run
