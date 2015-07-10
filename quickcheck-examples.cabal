@@ -3,7 +3,7 @@ version:             0.1.1.0
 synopsis:            QuickCheck examples
 description:         QuickCheck examples
 license:             BSD2
-license-file:        LICENSE
+license-file:        LICENSE-BSD2
 author:              Steven Shaw
 maintainer:          steven@steshaw.org
 homepage:            http://steshaw.org
