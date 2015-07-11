@@ -18,7 +18,7 @@ type MessageId = Integer
 type Message = String
 
 data UserAction
-  = Login String
+  = Login Username
   | ViewTweet MessageId
   | PostTweet Message
   deriving (Show)
